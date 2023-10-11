@@ -29,8 +29,9 @@ pipeline {
      stage('one') {
        steps {
          sh 'echo one'
-         sh 'echo ${SAMPLE_URL}'
+         sh 'echo $SAMPLE_URL'
          sh 'echo $SSH'
+         sh 'echo $PERSON'
        }
      }
 
